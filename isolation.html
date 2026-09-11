@@ -1,0 +1,144 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Isolate spores — BOTRYPATH</title>
+  <meta name="description" content="U-shaped microfluidic traps for single-spore isolation and on-chip germination.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body class="isolation-page">
+
+<header class="site-header">
+  <div class="header-inner">
+    <div class="header-left">
+      <a class="brand" href="index.html" aria-label="BOTRYPATH home">
+        <span class="brand-mark" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i><i></i></span>
+        <span class="brand-copy">
+          <strong>BOTRY<span>PATH</span></strong>
+          <small>Microfluidic tools for fungal spores sorting and characterization</small>
+        </span>
+      </a>
+      <div class="header-funder" aria-label="Project funding">
+        <img src="assets/logo-region.png" alt="Région Auvergne-Rhône-Alpes">
+        <span class="header-funder-copy"><small>Funded through</small><strong>Pack Ambition Recherche 2021</strong></span>
+      </div>
+    </div>
+    <button class="nav-toggle" aria-label="Open navigation" aria-expanded="false">☰</button>
+    <nav class="main-nav" aria-label="Main navigation"><a href="index.html">Home</a><a href="sorting.html">Sort spores</a><a href="isolation.html">Isolate spores</a><a href="characterization.html">Characterize</a><a href="results.html">Results</a><a href="team.html">Team</a><a href="publications.html">Publications</a></nav>
+  </div>
+</header>
+<main>
+  <section class="inner-hero isolation-hero">
+    <div class="container inner-hero-grid">
+      <div>
+        <p class="eyebrow">Isolate spores</p>
+        <h1>From sorted populations to individual fungal spores</h1>
+        <p class="lead">U-shaped microfluidic traps were developed to capture single spores, support isolated growth and prepare the way for reliable downstream genetic analysis.</p>
+      </div>
+      <figure class="inner-hero-image">
+        <img src="assets/zoom-utraps.png" alt="Microscopy image of the U-shaped microfluidic traps used for single-spore isolation">
+      </figure>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container article-grid">
+      <div class="article-main">
+        <p class="section-kicker">Why isolate?</p>
+        <h2>Each colony must originate from one spore</h2>
+        <p>After the sorting step, spores still need to be handled individually. If two colonies grow too close to one another, overlap can compromise the reliability of the subsequent PCR analysis.</p>
+        <p>The U-shaped trap concept was therefore designed as a low-cost microfluidic approach for single-spore capture, with dimensions compatible with the population expected at the small outlet of DLD 5.</p>
+        <div class="result-callout">
+          <strong>Long-term integration goal</strong>
+          <p>Connect the DLD 5 outlet directly to a single-spore trapping platform to combine enrichment and isolation in a continuous workflow.</p>
+        </div>
+      </div>
+      <aside class="article-aside">
+        <figure class="figure-card large-figure">
+          <img src="assets/fig-4-2-utraps.png" alt="U-shaped microfluidic trap array and experimental setup">
+          <figcaption>U-shaped trap array and experimental setup. Source: thesis, Fig. 4.2.</figcaption>
+        </figure>
+      </aside>
+    </div>
+  </section>
+
+  <section class="section alt">
+    <div class="container article-grid reverse-on-mobile">
+      <div class="article-main">
+        <p class="section-kicker">Capture performance</p>
+        <h2>Selective capture of individual spores</h2>
+        <p>Across three experimental replicates, the single-spore occupancy rate ranged from 34% to 47%. Although the total occupancy remained below the desired level, most occupied traps contained only one spore.</p>
+        <p>Only 3–6% of filled traps contained more than one spore. The main limitation was clogging near the first row of traps, which reduced delivery to downstream sites. Adding an inlet filter, similar to that used in the DLD device, was identified as a promising improvement.</p>
+      </div>
+      <aside class="article-aside">
+        <figure class="figure-card">
+          <img src="assets/fig-4-3-capture.png" alt="Individual Botrytis cinerea spores captured in U-shaped traps">
+          <figcaption>Individual spores captured in the U-shaped traps; highlighted regions show clogging and multiple-spore cases. Source: thesis, Fig. 4.3.</figcaption>
+        </figure>
+      </aside>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container article-grid">
+      <div class="article-main">
+        <p class="section-kicker">On-chip germination</p>
+        <h2>Trapped spores remain viable and can germinate</h2>
+        <p>A nutrient-rich gel was injected at 50 °C after trapping. Images taken immediately and after approximately 72 hours showed germination in regions where the gel remained hydrated, confirming spore viability inside the device.</p>
+        <p>Growth was slower than under standard Petri-dish conditions, and partial gel evaporation was observed. Improving nutrient availability, humidity retention and device sealing are therefore important next steps.</p>
+      </div>
+      <aside class="article-aside">
+        <figure class="figure-card">
+          <img src="assets/fig-4-4-germination.png" alt="On-chip germination of individually trapped fungal spores at t0 and t72">
+          <figcaption>Single-spore culture at t0 and after 72 h. Germination occurs where the nutrient gel remains present. Source: thesis, Fig. 4.4.</figcaption>
+        </figure>
+      </aside>
+    </div>
+  </section>
+
+  <section class="section alt">
+    <div class="container">
+      <p class="section-kicker">Towards an integrated workflow</p>
+      <h2>Sort → isolate → grow → analyse</h2>
+      <div class="workflow-wide">
+        <div><span>01</span><strong>Mixed spore population</strong></div><b>→</b>
+        <div><span>02</span><strong>DLD 5 enrichment</strong></div><b>→</b>
+        <div><span>03</span><strong>U-shaped single-spore capture</strong></div><b>→</b>
+        <div><span>04</span><strong>Isolated culture & PCR</strong></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section next-page-band">
+    <div class="container next-page">
+      <div><p class="section-kicker">Next</p><h2>How can mutations alter the biophysical properties of spores?</h2></div>
+      <a class="button primary" href="characterization.html">Go to “Characterize” →</a>
+    </div>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <div class="container footer-grid">
+    <div>
+      <strong class="footer-brand">BOTRYPATH</strong>
+      <p>Microfluidic tools for biophysical sorting and characterization of fungal spores.</p>
+    </div>
+    <div>
+      <strong>Explore</strong>
+      
+      <a href="results.html">Results & perspectives</a>
+      <a href="publications.html">Publications</a>
+    </div>
+    <div>
+      <strong>Project</strong>
+      <span>Université Claude Bernard Lyon 1</span>
+      <span>Funded by Région Auvergne-Rhône-Alpes</span>
+      <span>Pack Ambition Recherche 2021 — BOTRYPATH</span>
+    </div>
+  </div>
+</footer>
+<script src="script.js"></script>

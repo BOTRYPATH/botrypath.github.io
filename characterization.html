@@ -1,0 +1,180 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Characterize spores — BOTRYPATH</title>
+  <meta name="description" content="Mechanical AFM and electrical impedance characterization of Botrytis cinerea spores.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<header class="site-header">
+  <div class="header-inner">
+    <div class="header-left">
+      <a class="brand" href="index.html" aria-label="BOTRYPATH home">
+        <span class="brand-mark" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i><i></i></span>
+        <span class="brand-copy">
+          <strong>BOTRY<span>PATH</span></strong>
+          <small>Microfluidic tools for fungal spores sorting and characterization</small>
+        </span>
+      </a>
+      <div class="header-funder" aria-label="Project funding">
+        <img src="assets/logo-region.png" alt="Région Auvergne-Rhône-Alpes">
+        <span class="header-funder-copy"><small>Funded through</small><strong>Pack Ambition Recherche 2021</strong></span>
+      </div>
+    </div>
+    <button class="nav-toggle" aria-label="Open navigation" aria-expanded="false">☰</button>
+    <nav class="main-nav" aria-label="Main navigation"><a href="index.html">Home</a><a href="sorting.html">Sort spores</a><a href="isolation.html">Isolate spores</a><a href="characterization.html">Characterize</a><a href="results.html">Results</a><a href="team.html">Team</a><a href="publications.html">Publications</a></nav>
+  </div>
+</header>
+<main>
+  <section class="inner-hero characterization-hero">
+    <div class="container inner-hero-grid">
+      <div>
+        <p class="eyebrow">Characterize spores</p>
+        <h1>Biophysical signatures of the fungal cell wall</h1>
+        <p class="lead">Mechanical measurements compare wild-type (WT) and mutant spores (ΔAGS), while a dedicated microfluidic EIS platform prepares the way for single-spore electrical characterization.</p>
+      </div>
+      <div class="hero-stat-panel">
+        <div><strong>AFM</strong><span>mechanical response</span></div>
+        <div><strong>ΔAGS</strong><span>mutant compared with WT</span></div>
+        <div><strong>EIS</strong><span>single-particle electrical platform</span></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container">
+      <p class="section-kicker">Local mechanical characterization</p>
+      <h2>Atomic Force Microscopy reveals differences between wild-type (WT) and mutant spores ΔAGS</h2>
+      <p>
+        The ΔAGS strain is a <em>B. cinerea</em> mutant developed by the MAP laboratory
+        to investigate the role of α-glucans in the fungal cell wall. These polysaccharides
+        are found at the spore surface and may contribute to adhesion during germination.
+      </p>
+      <div class="cards-2">
+        <article class="science-card">
+          <h3>Local stiffness</h3>
+          <p>Force–indentation experiments using a sufficiently rigid cantilever gave Young’s modulus values in the range of hundreds of MPa. Wild-type spores showed a broader distribution and tended toward higher values than ΔAGS.</p>
+          <figure class="figure-card embedded-figure">
+            <img src="assets/fig-6-5-young.png" alt="Boxplot comparing Young's modulus of wild-type and delta AGS spores">
+            <figcaption>Local Young’s modulus comparison wild-type (WT) vs modified fungal wall (ΔAGS).</figcaption>
+          </figure>
+        </article>
+        <article class="science-card">
+          <h3>Surface heterogeneity</h3>
+          <p>NAP-mode measurements highlighted a more heterogeneous local surface response for the wild-type strain, while ΔAGS showed more clearly defined regions of energy dissipation.</p>
+          <figure class="figure-card embedded-figure">
+            <img src="assets/fig-6-8-nap.png" alt="AFM NAP mode maps comparing wild-type and delta AGS spore surfaces">
+            <figcaption>NAP-mode dissipation maps at the local scale. (a) WT, (b) ΔAGS.</figcaption>
+          </figure>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section class="section alt">
+    <div class="container article-grid">
+      <div class="article-main">
+        <p class="section-kicker">Whole-spore response</p>
+        <h2>The ΔAGS mutant is more deformable</h2>
+        <p>To probe the global mechanical response, a tipless AFM cantilever compressed whole spores. Approximately 100 force–deformation curves were recorded per strain at applied forces of 3 µN and 6 µN.</p>
+        <p>The difference between strains was statistically significant: ΔAGS spores exhibited larger deformation values than wild-type spores under the same load, suggesting a softer global mechanical response.</p>
+        <div class="highlight-box">
+          <span class="highlight-number">ΔAGS &gt; WT deformation</span>
+          <p>A measurable mechanical phenotype associated with alteration of the fungal cell wall.</p>
+        </div>
+      </div>
+      <aside class="article-aside">
+        <figure class="figure-card large-figure">
+          <img src="assets/fig-6-9-10-deformation.png" alt="AFM whole-spore force deformation principle and comparison between wild-type and delta AGS spores">
+          <figcaption>Whole-spore force–deformation measurements (top) and WT vs ΔAGS comparison at (a) 3µN and (b) 6µN.</figcaption>
+        </figure>
+      </aside>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container">
+      <p class="section-kicker">Electrical characterization</p>
+      <h2>A microfluidic platform for single-spore impedance spectroscopy</h2>
+      <div class="cards-2">
+        <article class="science-card">
+          <h3>Microfluidic architecture for EIS</h3>
+          <p>The device combines a trapping microchannel with microelectrodes patterned on a glass substrate. Each trapping site is associated with a set of electrodes so that one immobilized particle can be electrically probed by Electrical Impedance Spectroscopy (EIS).</p>
+          <figure class="figure-card embedded-figure">
+            <img src="assets/fig-7-1-eis-architecture.png" alt="Two-layer microfluidic EIS system with trapping channel and gold microelectrodes">
+            <figcaption>Single spore trapping system and associated electrodes for electrical impedance spectroscopy (EIS)</figcaption>
+          </figure>
+        </article>
+        <article class="science-card">
+          <h3>Connections to the microfluidic EIS system</h3>
+          <p>The microfluidic system for EIS must be compatible with placement under an optical microscope and capable of accommodating fluidic and electrical connections. To this end, an interface has been designed to ensure quick and easy positioning and contact establishment.</p>
+          <figure class="figure-card embedded-figure">
+            <img src="assets/fig-7-4-electrodes.png" alt="Electrical connections interface">
+            <figcaption>Interface for integrating the EIS system into the microscope environment.</figcaption>
+          </figure>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section class="section alt">
+    <div class="container article-grid reverse-on-mobile">
+      <div class="article-main">
+        <p class="section-kicker">Measurement chain</p>
+        <h2>From the microfluidic trap to the impedance spectrum</h2>
+        <p>The platform was integrated with a Zurich Instruments HF2LI lock-in amplifier and transimpedance electronics. A reusable mechanical frame aligns the microfluidic stamp, electrode substrate and electrical contacts.</p>
+        <p>At the end of the thesis, the microfluidic system was fully assembled and preliminary tests with polystyrene beads had been performed. Biological impedance signatures of <em>B. cinerea</em> spores is a work under progress.</p>
+        <div class="result-callout">
+          <strong>Scientific perspective</strong>
+          <p>Electrical signatures has the potential to provide complementary information about fungal wall structure, mutations and possibly nucleus number.</p>
+        </div>
+      </div>
+      <aside class="article-aside stack-figures">
+        <figure class="figure-card">
+          <img src="assets/fig-7-5-integration.png" alt="Whole EIS setup with microscope and lock-in amplifier">
+          <figcaption>Whole EIS setup with microscope, environmental chamber and lock-in amplifier</figcaption>
+        </figure>
+        <figure class="figure-card">
+          <img src="assets/fig-7-6-circuit.png" alt="Electrical circuit used for EIS measurement and data analysis">
+          <figcaption>EIS measurement circuit.</figcaption>
+        </figure>
+      </aside>
+    </div>
+  </section>
+
+  <section class="section next-page-band">
+    <div class="container next-page">
+      <div><p class="section-kicker">Next</p><h2>What did the thesis establish, and what remains to be developed?</h2></div>
+      <a class="button primary" href="results.html">Results & perspectives →</a>
+    </div>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <div class="container footer-grid">
+    <div>
+      <strong class="footer-brand">BOTRYPATH</strong>
+      <p>Microfluidic tools for biophysical sorting and characterization of fungal spores.</p>
+    </div>
+    <div>
+      <strong>Explore</strong>
+      <a href="results.html">Results & perspectives</a>
+      <a href="publications.html">Publications</a>
+    </div>
+    <div>
+      <strong>Project</strong>
+      <span>Université Claude Bernard Lyon 1</span>
+      <span>Funded by Région Auvergne-Rhône-Alpes</span>
+      <span>Pack Ambition Recherche 2021 — BOTRYPATH</span>
+    </div>
+  </div>
+</footer>
+<script src="script.js"></script>
+</body>
+</html>

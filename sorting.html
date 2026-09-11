@@ -1,0 +1,159 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Sort spores — BOTRYPATH</title>
+  <meta name="description" content="DLD-based enrichment of low nucleus content Botrytis cinerea spores.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body class="sorting-page">
+<header class="site-header">
+  <div class="header-inner">
+    <div class="header-left">
+      <a class="brand" href="index.html" aria-label="BOTRYPATH home">
+        <span class="brand-mark" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i><i></i></span>
+        <span class="brand-copy">
+          <strong>BOTRY<span>PATH</span></strong>
+          <small>Microfluidic tools for fungal spores sorting and characterization</small>
+        </span>
+      </a>
+      <div class="header-funder" aria-label="Project funding">
+        <img src="assets/logo-region.png" alt="Région Auvergne-Rhône-Alpes">
+        <span class="header-funder-copy"><small>Funded through</small><strong>Pack Ambition Recherche 2021</strong></span>
+      </div>
+    </div>
+    <button class="nav-toggle" aria-label="Open navigation" aria-expanded="false">☰</button>
+    <nav class="main-nav" aria-label="Main navigation"><a href="index.html">Home</a><a href="sorting.html">Sort spores</a><a href="isolation.html">Isolate spores</a><a href="characterization.html">Characterize</a><a href="results.html">Results</a><a href="team.html">Team</a><a href="publications.html">Publications</a></nav>
+  </div>
+</header>
+
+<main>
+  <section class="inner-hero sorting-hero">
+    <div class="container inner-hero-grid">
+      <div>
+        <p class="eyebrow">Sort spores</p>
+        <h1>DLD-based enrichment of low nucleus content spores</h1>
+        <p class="lead">A label-free, size-based microfluidic strategy designed to increase the probability of recovering genetically homogeneous material.</p>
+      </div>
+      <figure class="inner-hero-image">
+        <img src="assets/microfluidic-dld-device-sem.png" alt="SEM image of the microfluidic DLD device used for Botrytis cinerea spore sorting">
+      </figure>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container article-grid">
+      <div class="article-main">
+        <p class="section-kicker">Step 1 — Establish the physical basis</p>
+        <h2>Spore size increases with nucleus number</h2>
+        <p>The central hypothesis was that spores with a single nucleus tend to be smaller than spores containing several nuclei. Equivalent diameter was measured in bright-field images, while GFP-labelled nuclei were counted in fluorescence images.</p>
+        <p>Analysis of more than 1,800 spores showed a clear trend: spores with more nuclei tended to have larger equivalent diameters, although the distributions overlap. A theoretical critical diameter around 6 µm was therefore selected as a practical compromise for enriching the low-nucleus-content population.</p>
+      </div>
+      <aside class="article-aside stack-figures">
+        <figure class="figure-card">
+          <img src="assets/fig-3-4-spore-microscopy.png" alt="Bright-field and fluorescence images used to measure spore size and count nuclei">
+          <figcaption>Bright-field sizing and fluorescence-based nucleus counting.</figcaption>
+        </figure>
+        <figure class="figure-card">
+          <img src="assets/fig-3-5-size-nuclei.png" alt="Violin plot showing spore equivalent diameter versus number of nuclei">
+          <figcaption>Equivalent diameter distribution as a function of nucleus number; dashed line at 6 µm.</figcaption>
+        </figure>
+      </aside>
+    </div>
+  </section>
+
+  <section class="section alt">
+    <div class="container article-grid reverse-on-mobile">
+      <div class="article-main">
+        <p class="section-kicker">Step 2 — Implement DLD</p>
+        <h2>Deterministic Lateral Displacement</h2>
+        <p>DLD uses a periodic array of micropillars. Particles below a device-dependent critical size mainly follow the fluid streamlines, whereas larger particles repeatedly interact with the array and are progressively displaced laterally.</p>
+        <p>Three devices were developed with theoretical critical diameters of 4, 5 and 6 µm. The system was first characterized with bead suspensions, including optimization of flow conditions, buffer composition and empirical separation behaviour.</p>
+        <div class="mini-comparison">
+          <div><strong>DLD 4µm</strong><span>high enrichment potential, but very low recovery</span></div>
+          <div class="selected"><strong>DLD 5µm</strong><span>best compromise between enrichment and recovery</span></div>
+          <div><strong>DLD 6µm</strong><span>higher recovery, but more multinucleated spores</span></div>
+        </div>
+      </div>
+      <aside class="article-aside">
+        <figure class="figure-card large-figure">
+          <img src="assets/fig-3-3-dld-setup.png" alt="Schematic of the DLD microfluidic experimental setup">
+          <figcaption>DLD experimental system with sample and buffer inlets, pillar array, small outlet and large outlet.</figcaption>
+        </figure>
+      </aside>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container article-grid">
+      <div class="article-main">
+        <p class="section-kicker">Step 3 — Test with fungal spores</p>
+        <h2>DLD 5µm provides the most useful biological compromise</h2>
+        <p>When tested with <em>B. cinerea</em> spores, DLD 5µm recovered a population at the small outlet dominated by spores with one or two nuclei, with only a smaller contribution from spores containing three nuclei.</p>
+        <p>The thesis reports that DLD 5µm gave the best balance between enrichment and recovery among the three tested designs. It therefore became the reference device for the genetic-purification experiments.</p>
+        <div class="result-callout">
+          <strong>Why DLD 5µm?</strong>
+          <p>It combines useful enrichment of mononucleated spores with enough recovered biological material to remain practical for downstream culture and PCR.</p>
+        </div>
+      </div>
+      <aside class="article-aside">
+        <figure class="figure-card tall-figure">
+          <img src="assets/fig-3-11-dld-results.png" alt="Experimental distributions of spore equivalent diameter versus nucleus number for DLD 4µm, DLD 5µm and DLD 6µm">
+          <figcaption>Spore distributions at inlet and outlets for DLD 4µm, DLD 5µm and DLD 6µm.</figcaption>
+        </figure>
+      </aside>
+    </div>
+  </section>
+
+  <section class="section alt">
+    <div class="container">
+      <p class="section-kicker">Genetic purification</p>
+      <h2>From enrichment to homogeneous mutant DNA</h2>
+      <div class="workflow-wide">
+        <div><span>01</span><strong>Mixed spore suspension</strong></div>
+        <b>→</b>
+        <div><span>02</span><strong>DLD 5µm sorting</strong></div>
+        <b>→</b>
+        <div><span>03</span><strong>Small-outlet spores</strong></div>
+        <b>→</b>
+        <div><span>04</span><strong>Single-spore culture + PCR</strong></div>
+      </div>
+      <p class="centered-copy">Across the experiments, a consistent trend was observed toward more colonies with homogeneous DNA after DLD processing. The magnitude of the improvement varied between biological replicates, so the thesis explicitly treats this result as promising but still requiring additional repetitions for robust quantification.</p>
+    </div>
+  </section>
+
+  <section class="section next-page-band">
+    <div class="container next-page">
+      <div><p class="section-kicker">Next</p><h2>After sorting: isolate and grow individual spores</h2></div>
+      <a class="button primary" href="isolation.html">Go to “Isolate spores” →</a>
+    </div>
+  </section>
+</main>
+
+<footer class="site-footer">
+    <div class="container footer-grid">
+      <div>
+        <strong class="footer-brand">BOTRYPATH</strong>
+        <p>Microfluidic tools for biophysical sorting and characterization of fungal spores.</p>
+      </div>
+      <div>
+        <strong>Navigation</strong>
+        
+        <a href="sorting.html">Sort spores</a>
+        <a href="characterization.html">Characterize</a>
+      </div>
+      <div>
+        <strong>Project</strong>
+        <span>Université Claude Bernard Lyon 1</span>
+        <span>Funded by Région Auvergne-Rhône-Alpes</span>
+        <span>Pack Ambition Recherche 2021 — BOTRYPATH</span>
+      </div>
+    </div>
+  </footer>
+<script src="script.js"></script>
+</body>
+</html>
